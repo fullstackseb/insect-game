@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+    />
+    <title>Insect Catch Game</title>
+  </head>
+  <body>
+    <div class="screen">
+      <h1>Catch The Insect</h1>
+      <button class="start-btn">Play Game</button>
+    </div>
+
+    <div class="screen">
+      <h1>Pick your "character" for the game!</h1>
+      <ul class="insects-list">
+        <li>
+          <button class="choose-insect-btn">
+            <p>Fly</p>
+            <img
+              src="https://pngimg.com/uploads/fly/fly_PNG3946.png"
+              alt="Fly"
+            />
+          </button>
+        </li>
+
+        <li>
+          <button class="choose-insect-btn">
+            <p>Mosquito</p>
+            <img
+              src="http://pngimg.com/uploads/mosquito/mosquito_PNG18175.png"
+              alt="Mosquito"
+            />
+          </button>
+        </li>
+
+        <li>
+          <button class="choose-insect-btn">
+            <p>Spider</p>
+            <img
+              src="http://pngimg.com/uploads/spider/spider_PNG12.png"
+              alt="Spider"
+            />
+          </button>
+        </li>
+
+        <li>
+          <button class="choose-insect-btn">
+            <p>Roach</p>
+            <img
+              src="http://pngimg.com/uploads/roach/roach_PNG12163.png"
+              alt="Roach"
+            />
+          </button>
+        </li>
+      </ul>
+      <br />
+      <h3>Click on the insects as fast as you can!</h3>
+    </div>
+
+    <div class="screen game-container" id="game-container">
+      <h3 class="time" id="time">Timer: 00:30</h3>
+      <h3 class="score" id="score">Score: 0</h3>
+      <h5 class="message" id="message">
+        Time's up! <br />To play again just press the button below.
+      </h5>
+      <button class="replay-btn">Play Again</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
